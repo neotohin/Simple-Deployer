@@ -1,0 +1,28 @@
+{
+  "name": "amzad/simleDeployer",
+  "description": "A Simple Deploy tool based on php-ssh",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Amzad Hossain",
+      "email": "amjad.hossain@gmail.com"
+    }
+  ],
+  "repositories": [
+  ],
+  "require": {
+    "php" : ">=5.5",
+    "symfony/console": "~2.6",
+    "symfony/config" : "3.0.*@dev",
+    "symfony/yaml" : "3.0.*@dev",
+    "herzult/php-ssh": "dev-master",
+    "symfony/filesystem": "~2.4",
+    "symfony/finder": "~2.4"
+  },
+
+  "autoload": {
+      "psr-4": {
+          "Cli\\": "src/Cli/"
+      }
+  }
+}

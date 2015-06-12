@@ -1,0 +1,24 @@
+server:
+  name: Sample Server
+  credential:
+    type: user
+    username: username
+    password: password
+  commands:
+    default:
+      label: 'Default Command'
+      script:
+        - cd /var/www/html
+    gs:
+      label: 'GIT Status'
+      pre:
+        - default
+      script:
+        - git status
+    glog:
+      label: 'GIT Log'
+      pre:
+        - default
+      script:
+        - git log --oneline
+

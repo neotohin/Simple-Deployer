@@ -1,0 +1,19 @@
+<?php
+
+
+require_once './vendor/autoload.php';
+
+define('APP_ROOT', __DIR__ . '/../' );
+define('CONFIG_PATH', APP_ROOT . 'server-configurations');
+
+use Symfony\Component\Console\Application;
+
+$console = new Application('CLI with the Symfony2 Console Component', '0.1.0');
+
+// This is the relevant addition
+$console->addCommands(array(
+    new Cli\Command\deployCommand(),
+));
+// End of relevant addition
+
+$console->run();

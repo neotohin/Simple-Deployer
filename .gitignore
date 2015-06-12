@@ -1,0 +1,6 @@
+.idea
+composer.lock
+*DS_Store
+vendor
+server-configurations/**
+!server-configurations/sample.yml
